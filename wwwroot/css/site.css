@@ -1,0 +1,62 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.textdanger {
+    color: red;
+    font-weight: bold;
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+    .textdanger:hover {
+        text-decoration: underline; /* Optional: underline on hover for emphasis */
+    }
+
+.detail {
+    color: aquamarine;
+    font-weight: bold;
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+    .detail:hover {
+        text-decoration: underline; /* Optional: underline on hover for emphasis */
+    }
+
+.edit {
+    color: greenyellow;
+    font-weight: bold;
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+    .edit:hover {
+        text-decoration: underline; /* Optional: underline on hover for emphasis */
+    }
+
+.create {
+    color: gold;
+    font-weight: bold;
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+    .create:hover {
+        text-decoration: underline; /* Optional: underline on hover for emphasis */
+    }

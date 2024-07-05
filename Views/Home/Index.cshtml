@@ -1,0 +1,53 @@
+﻿@model IEnumerable<crud_demo.Models.Country>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-dark create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id).
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isocode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isdcode)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isocode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isdcode)
+            </td>
+            <td>
+                <a asp-action="Edit" class="edit btn btn-dark" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" class="detail btn btn-dark" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" class="textdanger btn btn-dark" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
